@@ -1,5 +1,11 @@
 # Test Payara Project
 
+## Links
+
+[Demo](https://jt-test-payara.vercel.app/)
+
+[Storybook](https://jt-test-payara-storybook.vercel.app/)
+
 ## Overview
 
 This project is a demonstration of a web application built using modern web development tools and practices. It showcases the integration of various technologies to create a robust and maintainable codebase.
