@@ -159,14 +159,17 @@ function App() {
     return (
         <ThemeProvider>
             <BillingPeriodProvider>
-                <div className="font-display flex flex-col items-center w-full min-h-screen p-6 py-10 md:p-18">
-                    <PricingCardGrid>
-                        {cards.map(({ id, ...props }) => (
-                            <PricingCard key={id} {...props} />
-                        ))}
-                    </PricingCardGrid>
+                <div className="font-display flex flex-col w-full min-h-screen items-center px-6 pt-6">
+                    <ThemeToggle />
+
+                    <div className="flex flex-col items-center p-6 py-10 md:p-18 md:pt-8">
+                        <PricingCardGrid>
+                            {cards.map(({ id, ...props }) => (
+                                <PricingCard key={id} {...props} />
+                            ))}
+                        </PricingCardGrid>
+                    </div>
                 </div>
-                <ThemeToggle />
             </BillingPeriodProvider>
         </ThemeProvider>
     );
